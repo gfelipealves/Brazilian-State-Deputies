@@ -140,10 +140,10 @@ class viewAll:
         # Título
         st.markdown(f"<h2 style='font-size:20px; color:black;'>Tabela com os dados do(a) {name} no ano de {year} e pelo tipo de serviço {kind}</h2>", unsafe_allow_html=True)
         # Filtrar por nome e ano Deputado e os valores gastos por tipo de atividade
-        pesquisaDeputadoAnoTipo = self.Base_Deputados[['Deputado', 'Ano', 'Mes', 'Tipo', 'Fornecedor', 'CNPJ', 'Valor']].query(f"Deputado == '{name}' & Ano == {year} & Tipo == '{kind}'").groupby(by=['Deputado', 'Ano', 'Mes','Tipo']).sum().sort_values(by='Mes', ascending=True)
+        pesquisaDeputadoAnoTipo = self.Base_Deputados[['Deputado', 'Ano', 'Mes', 'Tipo', 'Fornecedor', 'Valor']].query(f"Deputado == '{name}' & Ano == {year} & Tipo == '{kind}'").groupby(by=['Deputado', 'Ano', 'Mes','Tipo']).sum().sort_values(by='Mes', ascending=True)
         st.dataframe(pesquisaDeputadoAnoTipo)
         # Título
         st.markdown(f"<h2 style='font-size:20px; color:black;'>Tabela com todos os dados do(a) {name}</h2>", unsafe_allow_html=True)
         # Exibir todos os dados
-        pesquisaDeputadoAnoTipoAll = self.Base_Deputados[['Deputado', 'Ano', 'Mes', 'Tipo', 'Fornecedor', 'CNPJ', 'Valor']].query(f"Deputado == '{name}'").sort_values(by=['Ano','Mes'], ascending=True)
+        pesquisaDeputadoAnoTipoAll = self.Base_Deputados[['Deputado', 'Ano', 'Mes', 'Tipo', 'Fornecedor', 'Valor']].query(f"Deputado == '{name}'").sort_values(by=['Ano','Mes'], ascending=True)
         st.dataframe(pesquisaDeputadoAnoTipoAll)
