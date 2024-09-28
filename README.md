@@ -39,9 +39,14 @@ O Estado de São Paulo e o seu Parlamento - a Assembleia Legislativa do Estado d
 
 
 **O site deve ter uma ferramenta de pesquisa de conteúdo;**
+
 **Indicar meios de contato por via eletrônica ou telefônica com o órgão que mantém o site;**
+
 **Deve ser possível realizar o download das informações em formato eletrônico (planilhas e texto);**
+
 **O site deve ser aberto à ação de mecanismos automáticos de recolhimento de informações, em formatos abertos e estruturados;**
+
 **A autenticidade e a integridade das informações do site devem ser garantidas pelo órgão;**
+
 **Manter atualizadas as informações disponíveis para acesso.**
 
