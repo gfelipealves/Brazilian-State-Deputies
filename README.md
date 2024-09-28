@@ -14,7 +14,7 @@ Esta é uma oportunidade para explorar como os deputados estaduais utilizam os r
 Para executar a aplicação, use o comando:
 ```bash
 streamlit run main.py
-
+```bash
 
 Informações gerais:
 1. O que é o projeto Dados Abertos ALESP?
