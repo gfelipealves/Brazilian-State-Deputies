@@ -3,6 +3,9 @@ import pandas as pd
 from graphics.graphics import viewAll
 import plotly.express as px
 
+# Configurar o título da página
+st.set_page_config(page_title="Gastos dos Deputados Alesp", layout="wide")
+
 # Criar a instância da classe viewAll
 view = viewAll()
 
@@ -21,8 +24,14 @@ selectedKind = st.sidebar.selectbox("Selecione o Tipo de Despesa", view.allKind(
 
 ################## Exibir Gráficos #######################
 # Título
-st.markdown(f"<h2 style='font-size:20px; color:black;'>Gasto dos Deputados Estaduais de São Paulo</h2>", unsafe_allow_html=True)
-
+st.markdown(
+    """
+    <h2 style='text-align: center; font-size:20px; color:black;'>
+        Gasto dos Deputados Estaduais de São Paulo
+    </h2>
+    """,
+    unsafe_allow_html=True
+)
 # Exibir gráfico com maiores custos
 view.filterHigherCust()
 
